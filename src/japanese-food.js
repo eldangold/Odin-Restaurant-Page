@@ -3,4 +3,5 @@ export default function renderJapaneseFood() {
   content.textContent = "Japanese Food";
   document.getElementById("content").innerHTML = "";
   document.getElementById("content").appendChild(content);
+  document.getElementById("japanese-food").classList.add("active");
 }

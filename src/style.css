@@ -1,29 +1,48 @@
+@font-face {
+  font-family: "Murasamu";
+  src: url(./murasamu.woff2);
+}
 body {
-  padding: 15px;
+  padding: 0;
   margin: 0;
   background-color: #ea770f;
+  height: 100vh;
 }
 
 nav {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 20px;
+  padding: 20px;
 
   & button {
-    color: #fcf3e3;
     border: none;
     border-radius: 6px;
-    background-color: #013d5a;
-    font-size: 1.75em;
-    padding: 10px;
+    background-color: #fcf3e3;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    font-size: clamp(1em, 1.5em, 1.75em);
+    letter-spacing: 8px;
+    line-height: 1.25;
+    padding: 15px;
+    cursor: pointer;
+    font-family: "Murasamu";
+    color: red;
   }
 }
 
 #content {
-  margin: 4vh 8vh 4vh 8vh;
-  padding: 25px;
+  width: 80%;
+  margin: 5vh auto;
+  padding: 5%;
   box-shadow: 5px 5px 20px;
   border-radius: 10px;
   min-height: 40vh;
   background-color: #e19918;
+}
+
+.active {
+  background-color: red;
+  color: #fcf3e3;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }

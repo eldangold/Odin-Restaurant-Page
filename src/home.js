@@ -3,4 +3,5 @@ export default function renderHomePage() {
   content.textContent = "Home";
   document.getElementById("content").innerHTML = "";
   document.getElementById("content").appendChild(content);
+  document.getElementById("home").classList.add("active");
 }
