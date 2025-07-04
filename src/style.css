@@ -46,3 +46,14 @@ nav {
   color: #fcf3e3;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+#logo {
+  display: block;
+  margin: auto;
+  align-self: center;
+  height: 14vh;
+}
+
+header {
+  background-color: #1c2a27;
+}
