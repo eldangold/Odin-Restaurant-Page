@@ -7,6 +7,7 @@ body {
   margin: 0;
   background-color: #ea770f;
   height: 100vh;
+  font-family: sans-serif;
 }
 
 nav {
@@ -32,13 +33,25 @@ nav {
 }
 
 #content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   margin: 5vh auto;
-  padding: 5%;
-  box-shadow: 5px 5px 20px;
   border-radius: 10px;
-  min-height: 40vh;
   background-color: #e19918;
+  padding: 20px;
+
+  & h1,
+  p {
+    white-space: pre-line;
+    width: 60%;
+  }
+
+  & p {
+    font-size: clamp(1em, 1.5em, 2em);
+  }
 }
 
 .active {
