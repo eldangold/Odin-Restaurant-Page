@@ -27,3 +27,5 @@ document.getElementById("about-us").addEventListener("click", () => {
   resetActiveLink();
   renderAboutUs();
 });
+
+renderHomePage();
